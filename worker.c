@@ -6,8 +6,6 @@
 #include <ctype.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#define READ 0
-#define WRITE 1
 
 char* cap(char* s, int size){
   int h;

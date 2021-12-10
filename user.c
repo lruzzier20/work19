@@ -7,13 +7,11 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <errno.h>
-#define READ 0
-#define WRITE 1
 
 int main(){
   char s[50];
   mkfifo("p1",0644);
-  printf("%s\n",strerror(errno));
+  //printf("%s\n",strerror(errno));
   mkfifo("p2",0644);
   while(1){
     printf("Enter a string:");
